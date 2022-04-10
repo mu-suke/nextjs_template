@@ -1,4 +1,4 @@
-# Nest.js Template
+# Next.js Template
 
 ## 設定済み機能一覧
 
