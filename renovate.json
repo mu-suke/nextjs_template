@@ -1,12 +1,8 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "baseBranches": ["main"],
   "timezone": "Asia/Tokyo",
-  "schedule": [
-    "every weekend"
-  ],
+  "schedule": ["every weekend"],
   "labels": ["renovate"],
   "rangeStrategy": "pin",
   "reviewers": ["mu-suke"],
@@ -14,39 +10,24 @@
   "prConcurrentLimit": 5,
   "packageRules": [
     {
-      "packageNames": [
-        "node",
-        "npm"
-      ],
+      "packageNames": ["node", "npm"],
       "enabled": false
     },
     {
       "groupName": "Next.js families",
-      "matchPackagePatterns": [
-        "next"
-      ]
+      "matchPackagePatterns": ["next"]
     },
     {
       "groupName": "Linter families",
-      "matchPackagePatterns": [
-        "eslint",
-        "prettier"
-      ]
+      "matchPackagePatterns": ["eslint", "prettier"]
     },
     {
       "groupName": "React families",
-      "matchPackagePatterns": [
-        "react",
-        "emotion"
-      ]
+      "matchPackagePatterns": ["react", "emotion"]
     },
     {
       "groupName": "Typescript families",
-      "matchPackageNames": [
-        "typescript",
-        "tsconfig-paths",
-        "ts-loader"
-      ]
+      "matchPackageNames": ["typescript", "tsconfig-paths", "ts-loader"]
     }
   ]
 }
