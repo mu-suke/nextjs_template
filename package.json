@@ -3,23 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '{src,cypress}/**/*.{ts,tsx}' --fix",
+    "lint": "biome lint --apply ./src",
     "lint:precommit": "eslint '{src,cypress}/**/*.{ts,tsx}' --max-warnings 0",
-    "fmt": "prettier -w -l './**/*.{js,jsx,ts,tsx,json}'",
-    "fmt:precommit": "prettier -l './**/*.{js,jsx,ts,tsx,json}'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": "npm run lint:precommit",
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss}": "npm run fmt:precommit"
+    "fmt": "biome format --write ./src",
+    "fmt:precommit": "prettier -l './**/*.{js,jsx,ts,tsx,json}'",
+    "check": "biome check --apply ./src",
+    "check:precommit": "biome check ./src",
+    "check:unsafe": "biome check --apply-unsafe ./src"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -27,6 +20,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.2",
     "@types/eslint": "8.56.9",
     "@types/node": "18.17.5",
     "@types/prettier": "2.7.3",
@@ -38,7 +32,7 @@
     "eslint-config-next": "13.5.6",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
-    "husky": "9.0.11",
+    "lefthook": "1.6.10",
     "lint-staged": "14.0.1",
     "prettier": "3.2.5",
     "typescript": "5.4.5"
