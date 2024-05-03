@@ -27,10 +27,6 @@
       "matchPackagePatterns": ["next"]
     },
     {
-      "groupName": "Linter families",
-      "matchPackagePatterns": ["eslint", "prettier"]
-    },
-    {
       "groupName": "React families",
       "matchPackagePatterns": ["react", "emotion"]
     },
