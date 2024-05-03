@@ -23,15 +23,15 @@
   },
   "dependencies": {
     "next": "13.5.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/eslint": "8.56.9",
     "@types/node": "18.17.5",
     "@types/prettier": "2.7.3",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.57.0",
