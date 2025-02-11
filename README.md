@@ -6,13 +6,14 @@
 - Husky
 - Renovate
 
-
 ## セットアップ
+
 ```shell
 $ npm install
 ```
 
 ## 開発を始める
+
 ```shell
 $ npm run dev
 ```
