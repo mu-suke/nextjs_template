@@ -8,9 +8,15 @@
     "lineEnding": "lf",
     "lineWidth": 80,
     "attributePosition": "auto",
-    "ignore": ["**/.gitignore", "**/.next", "**/out"]
+    "ignore": [
+      "**/.gitignore",
+      "**/.next",
+      "**/out"
+    ]
   },
-  "organizeImports": { "enabled": true },
+  "organizeImports": {
+    "enabled": true
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -84,13 +90,15 @@
         "useValidTypeof": "error"
       }
     },
-    "ignore": ["**/node_modules/", "**/next.config.js"]
+    "ignore": [
+      "**/node_modules/",
+      "**/next.config.js"
+    ]
   },
   "javascript": {
     "formatter": {
       "jsxQuoteStyle": "double",
       "quoteProperties": "asNeeded",
-      "trailingComma": "all",
       "semicolons": "asNeeded",
       "arrowParentheses": "asNeeded",
       "bracketSpacing": true,
@@ -101,7 +109,12 @@
   },
   "overrides": [
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "include": [
+        "*.ts",
+        "*.tsx",
+        "*.mts",
+        "*.cts"
+      ],
       "linter": {
         "rules": {
           "correctness": {
@@ -133,7 +146,12 @@
       }
     },
     {
-      "include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "include": [
+        "*.ts",
+        "*.tsx",
+        "*.mts",
+        "*.cts"
+      ],
       "linter": {
         "rules": {
           "correctness": {
