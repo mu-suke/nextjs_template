@@ -2,8 +2,8 @@
 
 ## 設定済み機能一覧
 
-- ESLint / Prettier
-- Husky
+- Biome
+- Husky / Lefthook
 - Renovate
 
 ## セットアップ
