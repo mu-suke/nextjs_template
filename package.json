@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "biome lint --apply ./src",
+    "lint": "biome lint --write ./src",
     "fmt": "biome format --write ./src",
-    "check": "biome check --apply ./src",
+    "check": "biome check --write ./src",
     "check:precommit": "biome check ./src",
     "check:unsafe": "biome check --apply-unsafe ./src"
   },
@@ -18,7 +18,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.2",
+    "@biomejs/biome": "1.9.4",
     "@types/node": "18.17.5",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
